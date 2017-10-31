@@ -1,0 +1,70 @@
+<!-- /*
+	Compilador C NASM - v1.0
+	Angel Fernando Carriola Monroy
+
+	Interface de Usuario
+*/-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="Go.js"></script>
+	<script src="ace/ace.js"></script>
+	<script src="BuildMessages.js"></script>
+	<script src="Scanner.js"></script>
+	<script src="Parser.js"></script>
+	<script src="SemanticAnalizer.js"></script>
+	<script src="App.js"></script>
+	<script src="jquery-1.12.3.min.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<link rel="StyleSheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+	<link rel="StyleSheet" href="css.css" />
+</head>
+<body>
+	<div class="container">
+		<section id="compiler" class="panel panel-primary"> 
+			<div class="panel-heading"> <h3 class="panel-title">Generador de código NASM para el lenguaje C</h3></div> 
+			<div class="panel-body">
+				<div class="well well-sm" id="codePanels">
+					<div class="error" id="notificationMessage"></div>
+					<ul class="nav nav-tabs" id="codeTabs">
+					  	<li role="presentation" class="active" id="editorTab"><a href="#editorPanel">Editar código: </a></li>
+					  	<li role="presentation" id="nasmTab"><a href="#nasmPanel">Código NASM: </a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="editorPanel">
+							<div id="editor"></div>
+						</div>
+						<div class="tab-pane" id="nasmPanel">
+							<div id="nasm"></div>
+						</div>
+					</div>
+					<br />
+					<button id="buildButton" type="button" class="btn btn-primary btn-lg">Compilar</button>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Mensajes de compilación</h3>
+					</div>
+
+					<div id="buildMessages" class="panel-body">
+						<table class="table table-hover">
+							<tr>
+								<th>Línea</th><th>Columna</th><th>Mensaje</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Árbol de derivación</h3>
+					</div>
+					<div class="panel-body">
+						<div id="tree" style="width: 100%; height: 600px;"></div>
+					</div>
+				</div>
+			</div> 
+		</section>
+	</div>
+</body>
+</html>

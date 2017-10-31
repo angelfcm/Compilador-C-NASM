@@ -1,0 +1,64 @@
+/*
+	Angel Fernando Carriola Monroy
+*/
+#compiler {
+	color: #333;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;	
+}
+
+#buildMessages {
+	padding: 15px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#buildMessages table {
+	text-align: left;
+}
+
+#buildMessages th {
+	text-align: left;
+	border-left: 1px solid #999;
+}
+
+#buildMessages th:first-child {
+	border-left: none;
+}
+
+#buildMessages td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#codePanels {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#codePanels .nav-tabs .active
+{
+	margin-left: -1px;
+}
+
+#codePanels .nav-tabs .active a {
+	background: #2F3129;
+	color: #eee;
+}
+
+#editor { 
+	width: 100%;
+	min-height: 500px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 16px;
+}
+
+#nasm { 
+	width: 100%;
+	min-height: 500px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 14px;
+}
